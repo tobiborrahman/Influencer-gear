@@ -58,12 +58,13 @@ nav ul li a {
   margin: 50px 100px;
   align-items: center;
 }
+
 .banner-photo {
   width: 440px;
   height: 440px;
   background-image: url("../images/Circle\ design.svg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .banner-heading {
   text-transform: capitalize;
@@ -185,7 +186,7 @@ nav ul li a {
   font-size: 17px;
   font-weight: 600;
   color: #e02c6d;
-  margin-right: 100px;
+  margin-right: 8%;
   /* margin: 20px auto; */
 }
 .see-more i{
@@ -307,5 +308,27 @@ nav ul li a {
   .feature-details{
     text-align: center;
     margin-bottom: 30px;
+  }
+}
+
+
+/* --------------------
+  min 576 and max 768
+----------------------- */
+@media screen and (min-width: 577px) and (max-width: 768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li a:hover{
+    width: 120px;
+    background-color: #e02c6d;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 10px;
   }
 }
